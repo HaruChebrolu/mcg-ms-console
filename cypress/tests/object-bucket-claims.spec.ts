@@ -29,6 +29,9 @@ describe('Object Bucket Claims page', () => {
   it('creates an Object Bucket Claim inside of redhat-data-federation namespace', () => {
     projectNameSpace.selectOrCreateProject(DATA_FEDERATION_NAMESPACE);
     createObjectBucketClaim(BUCKET_CLAIM_NAME);
+  });
+
+  it('deletes an Object Bucket Claim', () => {
     deleteObjectClaimResources(BUCKET_CLAIM_NAME);
   });
 });
