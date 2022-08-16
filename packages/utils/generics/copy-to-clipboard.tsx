@@ -41,6 +41,7 @@ export const CopyToClipboard: React.FC<CopyToClipboardProps> = React.memo(
               onMouseEnter={() => setCopied(false)}
               className="co-copy-to-clipboard__btn pf-c-clipboard-copy__group-copy"
               type="button"
+              data-test="copy-to-clipboard-button"
             >
               <CopyIcon />
               <span className="sr-only">{t('Copy to clipboard')}</span>
